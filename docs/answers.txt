@@ -1,0 +1,18 @@
+a) I have done two commits , one when I commited the readMe and another one when answers.txt was added
+
+b) It was last modified on Sep 15, 2016
+
+
+c) BasicWeapon,RoleGame,weapon and WeaponFactory class was modified only once
+   Sword class was modified twice.
+
+d) Git status shows your the current difference betwen your local copy with the remote branch.
+   Git log shows the log of all the commit messages.
+
+e) I could use "git log RoleGame.java" while in its directory or "git log --follow <Path way to RoleGame.java> "
+
+f) git log --grep='file'
+
+g) git log --author="Alice" --after="09/01/2016" --before="09/16/2016"
+
+
