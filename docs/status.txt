@@ -1,1 +1,5 @@
-//Include the output of git status here
+On branch master
+Youur branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commmit, working diretory clean
