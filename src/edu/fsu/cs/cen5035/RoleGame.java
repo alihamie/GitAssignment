@@ -17,7 +17,7 @@ public class RoleGame {
         int armor = 20;
         System.out.println("Swords was able to do " + sword.hit(armor) + " of damage due to an armor with "+armor+ " points.");
         
-        //TODO: Add the remainig weapons here
+
         Weapon arrow = WeaponFactory.getWeapon("arrow");
         System.out.println("Arrow has " + arrow.hit() + " of damage. ");
         System.out.println("Arrow was able to do " + arrow.hit(armor) +
@@ -28,7 +28,11 @@ public class RoleGame {
         System.out.println("Axe was able to do " + axe.hit(armor) +
                 " of damage due to an armor with "+ armor+ " points.");
 
-        
+
+        Weapon magicStaff = WeaponFactory.getWeapon("magicStaff");
+        System.out.println("MagicStaff has " + magicStaff.hit() + " of damage. ");
+        System.out.println("MagicStaff was able to do " + magicStaff.hit(armor) +
+                " of damage due to an armor with "+ armor+ " points and because it ignored 20% of armor.");
 
     }
 }

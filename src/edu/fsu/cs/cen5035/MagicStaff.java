@@ -3,9 +3,9 @@ package edu.fsu.cs.cen5035;
 /**
  * Created by Allouch on 9/20/2016.
  */
-public class Axe extends BasicWeapon implements Weapon {
+public class MagicStaff extends BasicWeapon implements Weapon {
 
-    public Axe(){super(60);}
+    public MagicStaff(){super(80);}
 
     @Override
     public int hit() {
@@ -14,16 +14,12 @@ public class Axe extends BasicWeapon implements Weapon {
 
     @Override
     public int hit(int armor) {
-        int damage = DAMAGE - armor;
-        if (armor > 0 && armor < 20) {
+        int armorIgnored = (int) (armor * 0.2);
+        int damage = DAMAGE + armorIgnored - armor;
 
-            damage =  DAMAGE;
-
-        } else  if(damage < 0) {
+        if(damage < 0)
             damage = 0;
-        }
 
         return damage;
-
     }
 }
